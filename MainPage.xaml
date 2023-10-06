@@ -36,6 +36,14 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button Text="Navigate to Page 2"
+                    Clicked="Button_Clicked"
+                    HorizontalOptions="Center"/>
+                    
+            <Button Text="Check Internet"
+                    HorizontalOptions="Center"
+                    Clicked="Button_Clicked_1"/>
+
         </VerticalStackLayout>
     </ScrollView>
 

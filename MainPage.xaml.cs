@@ -20,5 +20,18 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
+
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+		await Shell.Current.GoToAsync("NewPage2");
+    }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+		var hasInternet =
+			Connectivity.Current.NetworkAccess == NetworkAccess.Internet;
+
+		DisplayAlert("Has Internet?", $"{hasInternet}", "OK"); 
+    }
 }
 
